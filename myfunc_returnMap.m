@@ -13,10 +13,10 @@ function [] = myfunc_returnMap(data, D)
 
 for delay = 1:D
 	figure;
-	X = data(1:length(originalData(1,:))-delay+1);
-	X_delay = data(delay:length(originalData(1,:)));
+	X = data(1:length(data(1,:))-delay+1);
+	X_delay = data(delay:length(data(1,:)));
 
-	plot(X,X_delay, '.')
+	plot(X,X_delay)
 
 	title('ReturnMap')
 	xlabel('X(t)');
